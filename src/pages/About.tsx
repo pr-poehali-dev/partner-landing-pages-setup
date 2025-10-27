@@ -107,6 +107,142 @@ const About = () => {
             </div>
           </div>
         </section>
+
+        <section className="bg-secondary py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">Реализованные проекты</h2>
+            <div className="max-w-5xl mx-auto space-y-8">
+              <Card className="animate-fade-in">
+                <CardContent className="pt-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="md:col-span-2">
+                      <div className="flex items-start space-x-3 mb-3">
+                        <Icon name="Building" size={24} className="text-accent flex-shrink-0 mt-1" />
+                        <div>
+                          <h3 className="text-xl font-bold mb-2">ЖК «Новые Горизонты»</h3>
+                          <p className="text-muted-foreground mb-3">
+                            Запуск услуги «ремонт от застройщика» с нуля для крупного жилого комплекса на 1200 квартир
+                          </p>
+                          <div className="space-y-2 text-sm">
+                            <div className="flex items-start">
+                              <Icon name="CheckCircle" size={16} className="text-accent mr-2 mt-0.5" />
+                              <span>Разработана полная документальная база</span>
+                            </div>
+                            <div className="flex items-start">
+                              <Icon name="CheckCircle" size={16} className="text-accent mr-2 mt-0.5" />
+                              <span>Обучено 15 сотрудников застройщика</span>
+                            </div>
+                            <div className="flex items-start">
+                              <Icon name="CheckCircle" size={16} className="text-accent mr-2 mt-0.5" />
+                              <span>Заключены договоры с 8 проверенными подрядчиками</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex flex-col justify-between">
+                      <div className="space-y-2">
+                        <div className="text-sm text-muted-foreground">Результат</div>
+                        <div className="text-2xl font-bold text-accent">320+ квартир</div>
+                        <div className="text-sm text-muted-foreground">отремонтировано за год</div>
+                      </div>
+                      <div className="mt-4 pt-4 border-t">
+                        <div className="text-sm text-muted-foreground">Период</div>
+                        <div className="font-semibold">2022-2023</div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="animate-fade-in" style={{ animationDelay: '100ms' }}>
+                <CardContent className="pt-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="md:col-span-2">
+                      <div className="flex items-start space-x-3 mb-3">
+                        <Icon name="Home" size={24} className="text-purple-600 flex-shrink-0 mt-1" />
+                        <div>
+                          <h3 className="text-xl font-bold mb-2">Сеть агентств «ДомЭксперт»</h3>
+                          <p className="text-muted-foreground mb-3">
+                            Внедрение партнерской программы по ремонту для крупнейшей сети агентств недвижимости
+                          </p>
+                          <div className="space-y-2 text-sm">
+                            <div className="flex items-start">
+                              <Icon name="CheckCircle" size={16} className="text-purple-600 mr-2 mt-0.5" />
+                              <span>Подключено 42 офиса в Москве и МО</span>
+                            </div>
+                            <div className="flex items-start">
+                              <Icon name="CheckCircle" size={16} className="text-purple-600 mr-2 mt-0.5" />
+                              <span>Создана система учета и начисления комиссий</span>
+                            </div>
+                            <div className="flex items-start">
+                              <Icon name="CheckCircle" size={16} className="text-purple-600 mr-2 mt-0.5" />
+                              <span>Проведено обучение для 120+ агентов</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex flex-col justify-between">
+                      <div className="space-y-2">
+                        <div className="text-sm text-muted-foreground">Результат</div>
+                        <div className="text-2xl font-bold text-purple-600">+28%</div>
+                        <div className="text-sm text-muted-foreground">рост дохода агентства</div>
+                      </div>
+                      <div className="mt-4 pt-4 border-t">
+                        <div className="text-sm text-muted-foreground">Период</div>
+                        <div className="font-semibold">2023-2024</div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="animate-fade-in" style={{ animationDelay: '200ms' }}>
+                <CardContent className="pt-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="md:col-span-2">
+                      <div className="flex items-start space-x-3 mb-3">
+                        <Icon name="TrendingUp" size={24} className="text-green-600 flex-shrink-0 mt-1" />
+                        <div>
+                          <h3 className="text-xl font-bold mb-2">УК «Комфорт Плюс»</h3>
+                          <p className="text-muted-foreground mb-3">
+                            Оптимизация существующей услуги ремонта и увеличение маржинальности проектов
+                          </p>
+                          <div className="space-y-2 text-sm">
+                            <div className="flex items-start">
+                              <Icon name="CheckCircle" size={16} className="text-green-600 mr-2 mt-0.5" />
+                              <span>Проведен аудит текущих процессов</span>
+                            </div>
+                            <div className="flex items-start">
+                              <Icon name="CheckCircle" size={16} className="text-green-600 mr-2 mt-0.5" />
+                              <span>Оптимизированы поставки материалов</span>
+                            </div>
+                            <div className="flex items-start">
+                              <Icon name="CheckCircle" size={16} className="text-green-600 mr-2 mt-0.5" />
+                              <span>Внедрена система контроля качества</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex flex-col justify-between">
+                      <div className="space-y-2">
+                        <div className="text-sm text-muted-foreground">Результат</div>
+                        <div className="text-2xl font-bold text-green-600">+42%</div>
+                        <div className="text-sm text-muted-foreground">рост прибыли</div>
+                      </div>
+                      <div className="mt-4 pt-4 border-t">
+                        <div className="text-sm text-muted-foreground">Период</div>
+                        <div className="font-semibold">2024</div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
