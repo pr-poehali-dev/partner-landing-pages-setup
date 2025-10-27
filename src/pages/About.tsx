@@ -243,6 +243,173 @@ const About = () => {
             </div>
           </div>
         </section>
+
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-4">Тарифы на ремонт</h2>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+              Выберите подходящий уровень отделки для вашего объекта
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+              <Card className="animate-fade-in hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="text-center mb-6">
+                    <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Home" size={28} className="text-gray-600" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2">Первый</h3>
+                    <p className="text-sm text-muted-foreground mb-4">Базовая отделка</p>
+                    <div className="text-3xl font-bold text-accent">от 8 000 ₽</div>
+                    <div className="text-sm text-muted-foreground">за м²</div>
+                  </div>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Выравнивание стен и потолков</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Покраска в белый цвет</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Ламинат 32 класса</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Бюджетная сантехника</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="animate-fade-in hover:shadow-lg transition-shadow" style={{ animationDelay: '100ms' }}>
+                <CardContent className="pt-6">
+                  <div className="text-center mb-6">
+                    <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Wrench" size={28} className="text-blue-600" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2">Базовый</h3>
+                    <p className="text-sm text-muted-foreground mb-4">Качественная отделка</p>
+                    <div className="text-3xl font-bold text-accent">от 12 000 ₽</div>
+                    <div className="text-sm text-muted-foreground">за м²</div>
+                  </div>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Качественное выравнивание</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Покраска в любой цвет</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Ламинат 33 класса</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Сантехника среднего класса</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Встроенные розетки</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="animate-fade-in hover:shadow-lg transition-shadow border-accent border-2 relative" style={{ animationDelay: '200ms' }}>
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-accent text-accent-foreground px-4 py-1 rounded-full text-xs font-semibold">
+                    Популярный
+                  </span>
+                </div>
+                <CardContent className="pt-6">
+                  <div className="text-center mb-6">
+                    <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Sparkles" size={28} className="text-accent" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2">Комфорт</h3>
+                    <p className="text-sm text-muted-foreground mb-4">Премиальная отделка</p>
+                    <div className="text-3xl font-bold text-accent">от 18 000 ₽</div>
+                    <div className="text-sm text-muted-foreground">за м²</div>
+                  </div>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Идеальное выравнивание</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Дизайнерские решения</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Паркетная доска</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Премиальная сантехника</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Умные системы освещения</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Декоративные элементы</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="animate-fade-in hover:shadow-lg transition-shadow" style={{ animationDelay: '300ms' }}>
+                <CardContent className="pt-6">
+                  <div className="text-center mb-6">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent to-purple-600 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Crown" size={28} className="text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2">Престиж</h3>
+                    <p className="text-sm text-muted-foreground mb-4">Элитная отделка</p>
+                    <div className="text-3xl font-bold text-accent">от 28 000 ₽</div>
+                    <div className="text-sm text-muted-foreground">за м²</div>
+                  </div>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Эксклюзивный дизайн-проект</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Натуральный паркет</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Элитная сантехника</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Система умный дом</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Авторские материалы</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Авторский надзор</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="Check" size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Расширенная гарантия</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
