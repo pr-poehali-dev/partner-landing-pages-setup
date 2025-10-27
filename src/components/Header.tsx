@@ -18,12 +18,14 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-white border-b border-border sticky top-0 z-50 shadow-sm">
+    <header className="bg-white border-b border-border/50 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center space-x-2">
-            <Icon name="Building2" size={32} className="text-accent" />
-            <span className="text-2xl font-bold text-primary">РемонтПартнер</span>
+          <Link to="/" className="flex items-center space-x-3 group">
+            <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center group-hover:scale-110 transition-transform">
+              <Icon name="Building2" size={24} className="text-white" />
+            </div>
+            <span className="text-xl font-bold text-primary">РемонтПартнер</span>
           </Link>
 
           <nav className="hidden lg:flex items-center space-x-1">
@@ -31,10 +33,10 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-2 rounded-md transition-colors ${
+                className={`px-4 py-2 rounded-md transition-all font-medium text-sm ${
                   location.pathname === link.path
-                    ? 'bg-accent text-accent-foreground font-semibold'
-                    : 'text-foreground hover:bg-secondary'
+                    ? 'bg-accent text-white'
+                    : 'text-foreground hover:text-accent hover:bg-accent/5'
                 }`}
               >
                 {link.label}
